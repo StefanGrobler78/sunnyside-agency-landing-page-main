@@ -78,6 +78,9 @@ a {
     padding: 0;
     padding-block: 2rem;
     visibility: hidden;
+    translate: 100% 0;
+    opacity: 0;
+    transition: .7s ease;
 }
 
 .ss__prim-navlist::before {
@@ -91,10 +94,11 @@ a {
 }
 .slidein {
     visibility: visible;
-    animation: slidein 1000ms forwards;
-}
+    translate: unset;
+    opacity: 1;
+  }
 
-@keyframes slidein {
+/* @keyframes slidein {
     from {
       transform: translateX(100%);
     }
@@ -102,7 +106,7 @@ a {
     to {
       transform: translateX(0%);
     }
-  }
+  } */
 .ss__navlinks{
     color: var(--dark-grayish-blue);
     font-weight: 600;
